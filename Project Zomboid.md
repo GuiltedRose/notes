@@ -5,15 +5,14 @@ This is going to be the first of a series of posts created over the course of a 
 
 # Mod List
 * Gun Suicide (for bites)
+* Mod Options (required for WCI)
 * Brita's Armor Pack
 * Common Sense
 * Buchcraft Gear -Tools
 * Vanilla Firearms Expanded
-* Autotsar Trailers
 * Map Symbol Size Slider
 * Fuel Side Indicator
 * Book Collection V10.5
-* True Actions (adds dancing)
 * Weapon Condition Indicator
 * Alternative Inventory Rendering
 * Become Desnsitized
@@ -23,6 +22,6 @@ This is going to be the first of a series of posts created over the course of a 
 
 # Character Traits & Photo
 ## Profession:
-* 
+* Police Officer
 ## Traits:
 * 
