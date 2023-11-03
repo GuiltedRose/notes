@@ -9,13 +9,12 @@ I was slain before I had a chance to tell them they were wrong…
 ![Getting closer...](https://github.com/GuiltedRose/notes/blob/main/IMG_6468.jpeg?raw=true)
 ![Bang!](https://github.com/GuiltedRose/notes/blob/main/IMG_6467.jpeg?raw=true)
 ## The One Who Waits:
-I met a new being similar to the rest… I’m not sure how I got here, but I’m **dead?!?!**!!
-![[IMG_6466.jpeg]]
-![[IMG_6465.jpeg]]
-![[IMG_6464.jpeg]]
-![[IMG_6463.jpeg]]
-
-![[IMG_6462.jpeg]]
+I met a new being similar to the rest… I’m not sure how I got here, but I’m **dead?!?!**
+![Am I dead?](https://github.com/GuiltedRose/notes/blob/main/IMG_6466.jpeg?raw=true)
+![Who are you?](https://github.com/GuiltedRose/notes/blob/main/IMG_6465.jpeg?raw=true)
+![Short explanation](https://github.com/GuiltedRose/notes/blob/main/IMG_6464.jpeg?raw=true)
+![What price?](https://github.com/GuiltedRose/notes/blob/main/IMG_6463.jpeg?raw=true)
+![An offer you can't refuse!](https://github.com/GuiltedRose/blob/main/IMG_6462.jpeg?raw=true)
 
 # The Life of a Cultist Begins!
 
