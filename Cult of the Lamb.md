@@ -1,4 +1,4 @@
-![image](https://github.com/GuiltedRose/notes/assets/71744135/fee181f3-4a0d-4ef6-9758-6faf31065675)# The Beginning:
+# The Beginning:
 There I was, tied up and surrounded by a bunch of hooded figures… they took me straight to the ones who burdened me… they call them the three bishops. These things; they aren’t like the rest of us.. they crave power. Crave the death of all lambs, unsure why but they spoke of a prophecy.
 I was slain before I had a chance to tell them they were wrong…
 ![The beginning of the game](https://github.com/GuiltedRose/notes/blob/main/IMG_6473.jpeg?raw=true)
