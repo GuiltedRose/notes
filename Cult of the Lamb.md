@@ -14,7 +14,7 @@ I met a new being similar to the rest… I’m not sure how I got here, but I’
 ![Who are you?](https://github.com/GuiltedRose/notes/blob/main/IMG_6465.jpeg?raw=true)
 ![Short explanation](https://github.com/GuiltedRose/notes/blob/main/IMG_6464.jpeg?raw=true)
 ![What price?](https://github.com/GuiltedRose/notes/blob/main/IMG_6463.jpeg?raw=true)
-![An offer you can't refuse!](https://github.com/GuiltedRose/blob/main/IMG_6462.jpeg?raw=true)
+![An offer you can't refuse!](https://github.com/GuiltedRose/notes/blob/main/IMG_6462.jpeg?raw=true)
 
 # The Life of a Cultist Begins!
 
