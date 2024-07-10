@@ -1,0 +1,1 @@
+OSINT stands for Open Source INTelligence. 
