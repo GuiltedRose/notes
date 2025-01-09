@@ -24,7 +24,7 @@ after that we execute a bit of code that will loop within itself to print "A" af
 We can now assemble the code with this line:
 `nasm -f bin ./boot.asm -o ./boot.bin`
 You can run it with this command: `qemu-system-x86_64 -hda ./boot.bin`.
-![[https://github.com/GuiltedRose/notes/blob/main/pictures/kernel-print-a.png]]
+[[https://github.com/GuiltedRose/notes/blob/main/pictures/kernel-print-a.png]]
 The image is the result we should get from QEMU after running the binary file. (taken from my system).
 
 ```asm
