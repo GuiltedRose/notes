@@ -2,7 +2,8 @@
 *  NASM & GCC - C compiler & asm assembler
 * qemu-system-x86 - emulator for kernels
 To run qemu: `qemu-system-x86_64`
-* [Interrupt Codes](https://www.ctyme.com/intr/int.htm)
+* [Interrupt Codes](https://www.ctyme.com/intr/int.html)
+* [Encryption Documentation](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.197.pdf)(Will be moved later).
 ## Memory:
 Hardware that allows a computer to store information.
 

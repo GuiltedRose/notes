@@ -147,7 +147,11 @@ start:
 	mov ax, 0x7c0
 	mov ds, ax
 	mov es, ax
+	mov ax, 0x00
+	mov ss, ax
+	mov sp, 0x7c00
 	sti ; Enables Interrupts
+	
 	mov si, message
 	call print	
 	
@@ -173,6 +177,9 @@ message: db 'Hello World!', 0
 times 510-($ - $$) db 0
 dw 0xAA55
 ```
+
+We can compile & run this code to make sure it works.
+![Fixed assembly origin code test](https://github.com/notes.blob/pictures/main/kernel-origin-fix.png?raw=true)
 We set our origin to 0 to ensure that most operating systems are able to boot from our assembly code. We can't be certain that the BIOS of all systems sets the origin to 0x7c00 by default.
 For example if we set ours to 0x7c00, and the BIOS uses 0, we will do the calculations for booting incorrectly.
 ```
@@ -182,3 +189,19 @@ BITS 16
 0x7c00 + 0x7c00 ; This is the incorrect math...
 ```
 So instead of ending with 0x7c00 we'd end with a completely different segment. We'll get 0xF800 instead.
+We set it up like this:
+```asm
+ORG 0
+BITS 16
+
+start:
+	cli
+	mov ax, 0x7c0
+	mov ds, ax
+	mov es, ax
+	mov ax, 0x00
+	mov ss, ax
+	mov sp, 0x7c00
+	sti
+```
+in order to ensure that the BIOS reads the program correctly every single time. This is because we clear the interrupts that the BIOS might be running then restart them again after our code is properly executed for the boot process. This will always ensure that our bootloader will boot at exactly 0x7c00. We also set up our stack in this way so that it can execute properly, if you remember, it moves downwards. (This code doesn't need copied it's just here to see why it's set up like this).
