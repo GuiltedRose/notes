@@ -134,7 +134,7 @@ Multiple segments are available through the use of segment registers.
 * stack pointer = 0x7FE
 * set 0x7BFE-0x7BFF to 0xffff
 The stack pointer points to a place in memory, and when doing stack operations it deals with the memory address we provide. The absolute address is given by taking SS(Stack Segment) * 16 + SP(Stack Pointer). 
-==**Note: Only 2 bytes are pushed here because we are in a 16-bit mode. If we ran in 32-bits then 4 would be pushed, and if it's 64-bit 6 bytes would be pushed.**==
+==**Note: Only 2 bytes are pushed here because we are in a 16-bit mode. If we ran in 32-bits then 4 would be pushed, and if it's 64-bit 8 bytes would be pushed.**==
 
 ## Back to Our Bootloader:
 ```asm
