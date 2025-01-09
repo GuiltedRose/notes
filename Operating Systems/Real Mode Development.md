@@ -24,7 +24,8 @@ after that we execute a bit of code that will loop within itself to print "A" af
 We can now assemble the code with this line:
 `nasm -f bin ./boot.asm -o ./boot.bin`
 You can run it with this command: `qemu-system-x86_64 -hda ./boot.bin`.
-![[pictures/kernel-print-a.png]]
+![this is an example](https://github.com/GuiltedRose/notes/blob/main/pictures/kernel-print-a.png?raw=true)
+
 The image is the result we should get from QEMU after running the binary file. (taken from my system).
 
 ```asm
@@ -64,7 +65,7 @@ At the beginning of our loop sub-label we use `lodsb` to load data in from the s
 Looking at the `print_char` sub routine we can see it's the same code we used before, we just moved it out of the way in order to use it to step through the preexisting data in memory('Hello World!').
 
 We can now recompile our code with NASM & get our new binary file to run through QEMU.
-![[pictures/kernel-hello-world.png]]
+![Hello World!](https://github.com/GuiltedRose/notes/blob/main/pictures/kernel-hello-world.png?raw=true)
 ## Understanding Real Mode:
 Real mode is the starting point for **ALL** x86_64 processors. It only has 1 megabyte of RAM accessible at this time, until you boot into Protected Mode.
 Real mode has no security.
