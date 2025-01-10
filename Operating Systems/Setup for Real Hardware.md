@@ -61,4 +61,13 @@ Now we can test it by recompiling it & running QEMU.
 `lsblk` -> (list block) this will list all the drives on your operating system.
 The reason I like using lsblk over fdisk (format disk) or similar commands is the fact you can see what's on the device before writing directly to it. It's easier to ensure your system is safe.
 ![lsblk output](https://github.com/GuiltedRose/notes/blob/main/pictures/lsblk-output.png?raw=true)
+I decided to show you both with and without the USB so you can see more clearly what's being added onto the system. In my case I'd format sdb so it doesn't affect my system.
 
+The next command we want to be super careful with which is why we used lsblk to ensure we are 100% correct in what data is being overwritten.
+`cd [OS Directory]` -> We want to switch to the folder our OS project is located in.
+`sudo dd if=./boot.bin of=/dev/[Device ID]` -> we then use dd(disc destroyer) to overwrite the USB with our operating system's bootloader. To understand what the command is doing let's take a closer look:
+* dd -> disc destroyer
+* if=./boot.bin-> input file . means any folder in current directory that has the file 'boot.bin'
+* of =/dev/sdb-> output file /dev directory manipulating the file sdb (yes, all drives are considered files).
+If it doesn't work you should do some research on your profile to find a manual specific to the architecture of that processor. It's not an end-all-be-all script, it's just a test.
+[[Interrupt Vector Table]]

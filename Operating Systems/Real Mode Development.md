@@ -209,3 +209,4 @@ start:
 	sti
 ```
 in order to ensure that the BIOS reads the program correctly every single time. This is because we clear the interrupts that the BIOS might be running then restart them again after our code is properly executed for the boot process. This will always ensure that our bootloader will boot at exactly 0x7c00. We also set up our stack in this way so that it can execute properly, if you remember, it moves downwards. (This code doesn't need copied it's just here to see why it's set up like this).
+[[Setup for Real Hardware]]

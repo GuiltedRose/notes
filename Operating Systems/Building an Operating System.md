@@ -1,9 +1,12 @@
 ## Tools needed for "Real Mode":
+* Linux operating system (Makes it easier for the hardware part)
+* if you aren't sure what distro to use click [here](https://ubuntu.com/download).
 *  NASM & GCC - C compiler & asm assembler
 * qemu-system-x86 - emulator for kernels
 To run qemu: `qemu-system-x86_64`
 * [Interrupt Codes](https://www.ctyme.com/intr/int.html)
 * [OS Development Resources](https://wiki.osdev.org/Expanded_Main_Page)
+* [Processor Interrupt List(NASM)](https://grandidierite.github.io/interrupts/)
 * [Encryption Documentation](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.197.pdf)(Will be moved later).
 ## Memory:
 Hardware that allows a computer to store information.
@@ -38,3 +41,7 @@ The BIOS is executed from ROM -> A bootloader is loaded from the BIOS -> our boo
 * The BIOS contains routines to assist our bootloader in booting our kernel.
 * The BIOS is 16 bit so it can only execute 16 bit code.
 * The BIOS routines are generic & standard will be expanded upon later.
+[[Real Mode Development]]
+[[Setup for Real Hardware]]
+[[Interrupt Vector Table]]
+[[Disk Access]]
