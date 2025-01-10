@@ -55,4 +55,10 @@ Now we can test it by recompiling it & running QEMU.
 `nasm -f bin ./boot.asm -o ./boot.bin`
 `qemu-system-x86_64 -hda ./boot.bin`
 
-![Setup for hardware](https://github.com/GuiltedRose/notes/blob/main/pictures/kernel-real-hardware-fix)
+![Setup for hardware](https://github.com/GuiltedRose/notes/blob/main/pictures/kernel-real-hardware-fix.png?raw=true)
+
+## Writing to the USB Drive:
+`lsblk` -> (list block) this will list all the drives on your operating system.
+The reason I like using lsblk over fdisk (format disk) or similar commands is the fact you can see what's on the device before writing directly to it. It's easier to ensure your system is safe.
+![lsblk output](https://github.com/GuiltedRose/notes/blob/main/pictures/lsblk-output.png?raw=true)
+
