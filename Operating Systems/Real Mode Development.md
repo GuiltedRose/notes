@@ -142,6 +142,8 @@ The stack pointer points to a place in memory, and when doing stack operations i
 ORG 0
 BITS 16
 
+jmp 0x7c0:start
+
 start:
 	cli ; Clear Interrupts
 	mov ax, 0x7c0
@@ -179,7 +181,7 @@ dw 0xAA55
 ```
 
 We can compile & run this code to make sure it works.
-![Fixed assembly origin code test](https://github.com/notes.blob/pictures/main/kernel-origin-fix.png?raw=true)
+![Fixed assembly origin code test](https://github.com/GuiltedRose/notes/blob/main/pictures/kernel-origin-fix.png?raw=true)
 We set our origin to 0 to ensure that most operating systems are able to boot from our assembly code. We can't be certain that the BIOS of all systems sets the origin to 0x7c00 by default.
 For example if we set ours to 0x7c00, and the BIOS uses 0, we will do the calculations for booting incorrectly.
 ```
@@ -193,6 +195,8 @@ We set it up like this:
 ```asm
 ORG 0
 BITS 16
+
+jmp 0x7c0:start
 
 start:
 	cli

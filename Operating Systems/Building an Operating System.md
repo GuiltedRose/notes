@@ -3,6 +3,7 @@
 * qemu-system-x86 - emulator for kernels
 To run qemu: `qemu-system-x86_64`
 * [Interrupt Codes](https://www.ctyme.com/intr/int.html)
+* [OS Development Resources](https://wiki.osdev.org/Expanded_Main_Page)
 * [Encryption Documentation](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.197.pdf)(Will be moved later).
 ## Memory:
 Hardware that allows a computer to store information.
