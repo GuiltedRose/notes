@@ -193,3 +193,4 @@ buffer: ; 0x7E00
 Now we should be able to see our manipulated text appear!
 ![File Data Shown](https://github.com/GuiltedRose/notes/blob/main/pictures/file-input-boot.png?raw=true)
 This works because text files are null terminated, we can change the data as much as we want and it'll change the output each time.
+[[Protected Mode Development]]
