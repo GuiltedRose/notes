@@ -382,7 +382,7 @@ all: ./bin/boot.bin ./bin/kernel.bin
 	rm -rf ./bin/os.bin
 	dd if=./bin/boot.bin >> ./bin/os.bin
 	dd if=./bin/kernel.bin >> ./bin/os.bin
-	dd if=/dev/zero >> bs=512 count=100 >> ./bin/os.bin
+	dd if=/dev/zero bs=512 count=100 >> ./bin/os.bin
 
 ./bin/kernel.bin: $(FILES)
 	i686-elf-ld -g -relocatable $(FILES) -o ./build/kernelfull.o
@@ -452,7 +452,7 @@ We will be creating 2 files `kernel.c` & `kernel.h`.
 ```c
 #include "kernel.h"
 
-void kernel_start() {
+void kernel_main() {
 
 }
 ```
@@ -474,7 +474,7 @@ all: ./bin/boot.bin ./bin/kernel.bin
 	rm -rf ./bin/os.bin
 	dd if=./bin/boot.bin >> ./bin/os.bin
 	dd if=./bin/kernel.bin >> ./bin/os.bin
-	dd if=/dev/zero >> bs=512 count=100 >> ./bin/os.bin
+	dd if=/dev/zero bs=512 count=100 >> ./bin/os.bin
 
 ./bin/kernel.bin: $(FILES)
 	i686-elf-ld -g -relocatable $(FILES) -o ./build/kernelfull.o
@@ -499,3 +499,37 @@ clean:
 ```
 
 We can now set all our flags and make scripts to run our C code when we call build.sh.
+
+Now we can link our C code to our kernel.asm file by doing this:
+```asm
+; Kernel.asm
+[BITS 32]
+
+global _start
+extern kernel_main
+
+CODE_SEG equ 0x00
+DATA_SEG equ 0x10
+
+_start:
+	mov ax, DATA_SEG
+	mov ds, ax
+	mov es, ax
+	mov fs, ax
+	mov gs, ax
+	mov ss, ax
+	mov ebp, 0x00200000
+	mov esp, ebp
+
+; Enabling A20 Line
+	in al, 0x92
+	or al, 2
+	out 0x92, al
+	
+	call kernel_main
+	
+	jmp $
+	
+times 512-($ - $$) db 0
+```
+This ensures that our C code is now started by our kernel.
