@@ -532,4 +532,4 @@ _start:
 	
 times 512-($ - $$) db 0
 ```
-This ensures that our C code is now started by our kernel.
+This ensures that our C code is now started by our kernel. For more information go to [[Text Mode]].
