@@ -15,4 +15,4 @@
 | 0        | 32-39 | Unused 0-7                 | Unused bits in this structure.                                        |
 | Selector | 16-31 | Selector 0-15              | The selector this interrupt is bound to I.e the kernel code selector. |
 | Offset   | 0-15  | Offset 0-15                | The lowest part of the offset to execute.                             |
-There's no numbers because they're incremented in order; just like the IVT. For example Offset 16-31 would be the first offset in this list, while "Int 5" is "Gate Type".
+There's no numbers because they're incremented in order; just like the IVT. This is just a list of bits we need to set for certain behaviors depending on the interrupt we are invoking, and who can actually invoke the interrupt.
